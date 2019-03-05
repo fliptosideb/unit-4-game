@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>The D.E.N.N.I.S. System</h1>
+        </div>
+        <div class="instructions">
+            <h3>How you play:</h3>
+            <p>The waitress can be negged as certain amount ("Amount to neg").</p>
+            <p>Charlie has four different approaches to negging.</p>
+            <p>By clicking on a Charlie below, you will add a specific amount of negs to your neg total ("Amount negged").</p>
+            <p>Charlie gets a date with the waitress by negging her the exact amount.</p>
+            <p>Charlie gets rejected by the waitress if he over-negs.</p>
+            <p>The amount Charlie negs is hidden from you until you click on a Charlie.</p>
+            <p>Each time when the game starts, the game will change the amount each Charlie negs.</p>
+        </div>
+
+        <div class="waitress">
+            <img src="assets/images/waitress.jpg" height=300px>
+            <h4>Amount to neg:
+                <span id="neg"></span>
+            </h4>
+        </div>
+
+        <div class="charlies">
+            <img src="assets/images/charlie1.jpg" height=80px id="charlie1">
+            <img src="assets/images/charlie2.jpg" height=80px id="charlie2">
+            <img src="assets/images/charlie3.png" height=80px id="charlie3">
+            <img src="assets/images/charlie4.png" height=80px id="charlie4">
+            <h4>Amount negged:
+                <span id="total"></span>
+            </h4>
+        </div>
+        <div class="outcomes">
+            <h5>Dates:
+                <span id="dates"></span>
+                </br>
+                Rejections:
+                <span id="rejections"></span>
+            </h5>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

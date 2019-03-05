@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: '18px';
+}
+.container {
+    display: grid;
+    grid-template-rows: 150px 250px 150px 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5px;
+
+}
+
+.header {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    text-align: center; 
+
+}
+
+.instructions {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 5;
+}
+
+.waitress {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 3;
+    padding-top: 40px
+}
+
+.charlies {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 4;
+    padding-top: 30px
+}
+
+.outcomes {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 4;
+    padding-top: 40px
+}
